@@ -1,0 +1,33 @@
+.features {
+    display: flex;
+}
+
+.features__item {
+    width: 270px;
+    & + & {
+        margin-left: 30px;
+    }
+}
+
+.features__title {
+    margin-bottom: 10px;
+    width: 270px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primery-text-color);
+}
+
+.features__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+}
