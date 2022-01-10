@@ -6,6 +6,12 @@
     padding-top: 0;
 }
 
+.section__works {
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+}
+
 .works {
     @media screen and (min-width: 1200px) {
         display: flex;
