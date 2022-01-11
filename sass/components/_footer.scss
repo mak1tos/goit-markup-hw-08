@@ -1,14 +1,23 @@
 .nav-footer {
     // display: flex;
     // align-items: baseline;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+    }
 
     &__address {
         margin-top: 20px;
     }
-    &__item {
-        margin-right: auto;
-        margin-left: auto;
-    }
+
     &__item + &__item {
         margin-top: 9px;
     }
@@ -31,8 +40,22 @@
         color: var(--white);
     }
     &__contact-social-link {
-        flex-grow: 1;
-        margin: 0 auto;
+        @media screen and (min-width: 768px) {
+            // margin: 0 auto;
+            // justify-content: space-around;
+        }
+        @media screen and (min-width: 1200px) {
+            margin: 0 auto 60px auto;
+            flex-grow: 1;
+
+            text-align: left;
+        }
+    }
+}
+.join-social-link {
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
     }
 }
 
@@ -46,7 +69,9 @@
     text-transform: uppercase;
     color: var(--white);
     &-social-link {
-        margin-left: 70px;
+        @media screen and (min-width: 1200px) {
+            margin-left: 70px;
+        }
     }
 }
 
@@ -58,6 +83,7 @@
 
 .footer-social__list {
     margin-top: 20px;
+    margin-bottom: 60px;
     display: flex;
     justify-content: center;
 }
@@ -65,15 +91,16 @@
 .footer-social__item {
     width: 44px;
     height: 44px;
+
     & + & {
         margin-left: 10px;
     }
 }
 
 .footer-social__link {
-    // display: flex;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
@@ -102,20 +129,31 @@
     text-transform: uppercase;
     color: var(--white);
     &-social__link {
-        margin-left: 93px;
+        @media screen and (min-width: 768px) {
+            margin-top: 60px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 93px;
+            text-align: left;
+        }
     }
 }
 
 .online-form {
-    // display: flex;
     align-items: center;
     margin-top: 20px;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+    }
 }
 
 .online-imput {
     width: 358px;
     height: 50px;
     margin-right: 12px;
+    margin-bottom: 20px;
     padding-left: 15px;
     padding-right: 15px;
     font-weight: 400;
@@ -154,4 +192,12 @@
 .online-form .button {
     display: flex;
     padding: 10px 29px 10px 29px;
+}
+.button-modal {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 20px;
+    }
 }
