@@ -137,7 +137,7 @@ img {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .button {
     margin: 0 auto;
     display: block;
@@ -268,10 +268,18 @@ img {
   margin-left: auto;
 }
 
-.contact-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .contact-nav {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .contact-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .contact-nav__item {
@@ -281,8 +289,6 @@ img {
 @media screen and (min-width: 768px) {
   .contact-nav__item {
     display: block;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
 }
 
@@ -298,7 +304,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 32px 0;
+  padding: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,8 +322,10 @@ img {
   color: var(--blue);
 }
 
-.contact-nav__item + .contact-nav__item {
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .contact-nav__item + .contact-nav__item {
+    margin-left: 30px;
+  }
 }
 
 .contact-nav__icon {
