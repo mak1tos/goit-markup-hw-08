@@ -246,11 +246,13 @@ img {
   color: var(--blue);
 }
 
-.site-nav-link__current {
+.site-nav-link__current,
+.mob-nav-link__current {
   color: var(--blue);
 }
 
-.site-nav-link__current::after {
+.site-nav-link__current::after,
+.mob-nav-link__current::after {
   content: '';
   width: 100%;
   height: 4px;
@@ -373,7 +375,6 @@ img {
   width: 100vw;
   height: 100vh;
   padding-top: 21px;
-  padding-bottom: 48px;
   z-index: 1;
 }
 

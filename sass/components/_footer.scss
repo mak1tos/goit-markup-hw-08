@@ -1,6 +1,4 @@
 .nav-footer {
-    // display: flex;
-    // align-items: baseline;
     text-align: center;
 
     @media screen and (min-width: 768px) {
@@ -41,10 +39,6 @@
     }
     &__contact-social-link {
         margin-bottom: 60px;
-        @media screen and (min-width: 768px) {
-            // margin: 0 auto;
-            // justify-content: space-around;
-        }
         @media screen and (min-width: 1200px) {
             margin: 0 auto 60px auto;
             flex-grow: 1;
