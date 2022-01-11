@@ -48,52 +48,49 @@
                     </svg>
                 </button>
             </div>
-            <!-- <div class="mob-menu is-hidden"> -->
+            <div class="mob-menu is-hidden">
             <!-- <div class="container"> -->
-                <div class="mob-menu__top">
+                <div class="mob-menu">
+                    <div class="container">
+                    <div class="mob-menu-top">
                     <button class="close-menu__btn">
                         <svg class="close-menu__icon" width="19" height="19">
                             <use href="./images/icons.svg#icon-close"></use>
                         </svg>
                     </button>
-                    <ul class="mob-menu__list">
-                        <li class="mob-menu__item ">
-                            <a class="mob-menu__link mob-menu__link--current" href="">Студия</a>
-                        </li>
-                        <li class="mob-menu__item">
-                            <a class="mob-menu__link" href="./portfolio.html">Портфолио</a>
-                        </li>
-                        <li class="mob-menu__item">
-                            <a class="mob-menu__link" href="">Контакты</a>
-                        </li>
+                    <ul class="mob-nav">
+                        <li class="mob-nav__item"><a class="mob-nav__link site-nav-link__current" href="./index.html">Студия</a></li>
+                        <li class="mob-nav__item"><a class="mob-nav__link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="mob-nav__item"><a class="mob-nav__link" href="">Контакты</a></li>
                     </ul>
-                </div>
-                <div class="mob-menu__bottom ">
-                    <ul class="connection">
-                        <li class="connection__item">
-                            <a class="connection__link" href="">
+                    </div>
+                    <div class="mob-menu-bootom">
+                    <ul class="mob-contact-nav">
+                        <li class="mob-contact-nav__item">
+                            <a href="tel:+380991111111" class="mob-contact-nav__tel">
                                 +38 096 111 11 11</a>
                         </li>
-                        <li class="connection__item connection__item--margin">
-                            <a class="connection__link connection__link--size " href="">
+                        <li class="mob-contact-nav__item">
+                            <a href="mailto:info@devstudio.com" class="mob-contact-nav__mail">
                                 info@devstudio.com</a>
                         </li>
                     </ul>
-                    <ul class="sayt">
-                        <li class="sayt__item">
-                            <a class="sayt__link" href="">Instagram</a>
+                    <ul class="mob-social">
+                        <li class="mob-social__item">
+                            <a class="mob-social__link" href="">Instagram</a>
                         </li>
-                        <li class="sayt__item">
-                            <a class="sayt__link" href="">Twitter</a>
+                        <li class="mob-social__item">
+                            <a class="mob-social__link" href="">Twitter</a>
                         </li>
-                        <li class="sayt__item">
-                            <a class="sayt__link" href="">Facebook</a>
+                        <li class="mob-social__item">
+                            <a class="mob-social__link" href="">Facebook</a>
                         </li>
-                        <li class="sayt__item">
-                            <a class="sayt__link" href="">LinkedIn</a>
+                        <li class="mob-social__item">
+                            <a class="mob-social__link" href="">LinkedIn</a>
                         </li>
                     </ul>
-                </div>
+                    </div>
+            </div>
             </div>
             </div>
         </header>
@@ -452,7 +449,7 @@
         </section>    
     </main>
     <!--Подвал-->
-        <!-- <footer class="footer-section">
+        <footer class="footer-section">
             <div class="container">
                 <div class="nav-footer">
                      <div class="nav-footer__contact-social-link">
@@ -516,8 +513,8 @@
                      </div>
                 </div>
             </div>    
-        </footer> -->
-        <!-- <div class="backdrop is-hidden" data-modal>
+        </footer>
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button type="button" class="modal-close" data-modal-close>
                     <svg class="modal-close-icon" width="11" height="11">
@@ -614,5 +611,6 @@
 
         </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
-</html> -->
+</html>
