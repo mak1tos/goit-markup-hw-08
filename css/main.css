@@ -1214,6 +1214,7 @@ img {
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
   background: #ffffff;
+  margin-left: -30px;
 }
 
 .projects__item img {
@@ -1230,9 +1231,9 @@ img {
 
 @media screen and (min-width: 1200px) {
   .projects__item {
-    -ms-flex-preferred-size: calc(100% / 3 - 30px);
-        flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
+    -ms-flex-preferred-size: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
+    margin: 15px;
   }
 }
 
