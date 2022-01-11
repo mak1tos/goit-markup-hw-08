@@ -5,6 +5,11 @@
     background-color: var(--white);
 }
 
+.container__header {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -23,18 +28,16 @@
     color: var(--primery-text-color);
 }
 
-.container__header {
-    display: flex;
-    align-items: center;
+.open-menu-btn {
+    margin: 22px 0 22px 0;
 }
-
 .main-nav {
     display: flex;
     align-items: center;
 }
 
 .site-nav {
-    display: flex;
+    display: none;
     margin-left: 93px;
     &__item:not(:last-child) {
         margin-right: 50px;
@@ -77,7 +80,7 @@
     & {
         display: flex;
         &__item {
-            display: flex;
+            display: none;
         }
         &__link {
             align-items: center;
