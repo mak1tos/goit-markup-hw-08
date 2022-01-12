@@ -39,16 +39,18 @@
     }
     &__contact-social-link {
         margin-bottom: 60px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
         @media screen and (min-width: 1200px) {
-            margin: 0 auto 60px auto;
             flex-grow: 1;
-
             text-align: left;
         }
     }
 }
 .join-social-link {
     text-align: center;
+    margin-bottom: 60px;
     @media screen and (min-width: 1200px) {
         text-align: left;
     }
@@ -78,7 +80,7 @@
 
 .footer-social__list {
     margin-top: 20px;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
     display: flex;
     justify-content: center;
 }
@@ -131,6 +133,7 @@
         @media screen and (min-width: 1200px) {
             margin-left: 93px;
             text-align: left;
+            margin-top: 0;
         }
     }
 }
@@ -145,10 +148,17 @@
 }
 
 .online-imput {
-    width: 358px;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        width: 358px;
+    }
     height: 50px;
-    margin-right: 12px;
+    // margin-right: 12px;
     margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        margin-right: 12px;
+    }
     padding-left: 15px;
     padding-right: 15px;
     font-weight: 400;
